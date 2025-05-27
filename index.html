@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_spaceboost_sm.png">
+    <title>SPACESBOOST</title>
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/icon/flaticon_digicom.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .main_style{
+            padding: 0 35px;
+        }
+        .tax_country{
+            margin-top: 50px;
+        }
+        .ban{
+            border-radius: 20px;
+        }
+        .ul-header .ul-header-bottom{
+            top: 0;
+            background-color: white;
+        }
+        .ul-header-2 .ul-header-nav a{
+            color: black;
+        }
+        .ul-header-2 .ul-header-bottom.sticky .ul-header-bottom-wrapper{
+            background-color: white;
+            width: 100%;
+        }
+        .ul-header-2-bottom-btns a:nth-child(1){
+            color: black;
+        }
+        .ul-header-2-bottom-btns a:nth-child(2){
+            background-color: #052859;
+            color: white;
+        }
+        .ul-banner-2-container{
+            padding: 40px;
+        }
+        .ul-banner-2-container{
+            border-radius: 20px;
+            background-color: #052859;
+        }
+        .ul-banner-2-title {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -1.12px;
+            }
+        .country-taxe{
+            display: flex;
+            border: 1px solid black; 
+            padding: 13px; 
+            border-radius: 5px; 
+            background-color: white; 
+            align-items: center; 
+            justify-content: space-between;
+        }
+        .country-taxe span{
+            margin-left: 5px;
+        }
+        .taxe{
+            border-radius: 5px; 
+            background-color: #F7A406; 
+            padding: 5px 15px; 
+            color: white;
+        }
+        .slide_img{
+            width: 80%;
+        }
+        .entreprise .card1, .faq{
+        background-color: #052859; 
+        color: white; 
+        padding: 50px;
+        border-radius: 20px;
+        }
+        .entreprise .card1 h1, .cta h2, .utilisation h1, .faq h1{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.84px;
+        color: white;
+        }
+        .entreprise .card1 p, .utilisation p, .about-us p, .faq p{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: normal;
+        }
+        .entreprise .card2{
+            padding: 50px;
+            background-color: #052859;
+            border-radius: 20px;
+        }
+        .cta{
+            background-color: #052859; 
+            border-radius: 20px; 
+        }
+        .cta-block{
+            padding: 50px 75px;
+            position: relative;
+            z-index: 500;
+        }
+
+        .moyen-payement{
+            background-color: #052859; 
+            color: white; 
+            padding: 50px; 
+            border-radius: 20px; 
+            align-items: center;
+        }
+        .utilisation{
+            background-color: #052859; 
+            border-radius: 20px; 
+            padding: 50px;
+        }
+
+        .payment-img {
+        opacity: 0.4;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+    @keyframes zoomInOut {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .zooming {
+      animation: zoomInOut 1s ease-in-out;
+      opacity: 1 !important;
+    }
+    @media screen and (max-width: 765px) {
+        .ul-banner-2-content{
+                flex-direction: column-reverse;
+            }
+    }
+        @media screen and (max-width: 992px) {
+            body{
+                overflow-x: clip;
+            }
+            .ul-header .ul-header-bottom{
+            position: sticky;
+        }
+            .main_style {
+                padding: 0 1px;
+            }
+            .tax_country{
+            margin-top: 0px;
+        }
+            .ul-banner-2-btns{
+                justify-content: center;
+            }
+            .btn-size{
+                width: 100%;
+            }
+            .entreprise .card1, .entreprise .card2, .utilisation, .faq{
+            padding: 20px;
+            }
+            .entreprise .card1 h1, .cta h2, .utilisation h1, .faq h1{
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 42px;
+            }
+            .entreprise .card1 p, .utilisation p, .about-us p, .faq p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: normal;
+            }
+            .cta-block{
+                padding: 15px;
+            }
+            .form_style{
+                display: none;
+            }
+            .slide_img{
+            width: 100%;
+            }
+            .moyen-payement{
+            padding: 20px; 
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <!-- header -->
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo_spaceboost.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <!-- sidebar closer -->
+            <button class="ul-sidebar-closer"><i class="flaticon-close-1"></i></button>
+        </div>
+
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Suivez-nous</span>
+
+            <div class="ul-sidebar-footer-social">
+                <a href="#"><i class="flaticon-facebook"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="#"><i class="flaticon-instagram"></i></a>
+                <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+
+    <!-- HEADER SECTION  -->
+    <header class="ul-header ul-header-2">
+        <div class="ul-header-bottom to-be-sticky wow animate__slideInDown" >
+            <div class="ul-header-bottom-wrapper ul-header-container">
+                <div class="logo-container">
+                    <a href="index.html" class="d-inline-block"><img src="assets/img/logo_spaceboost.png" alt="logo" class="logo"></a>
+                </div>
+
+                <div class="ul-header-bottom-center">
+                    <!-- header nav -->
+                    <div class="ul-header-nav-wrapper">
+                        <div class="to-go-to-sidebar-in-mobile">
+                            <nav class="ul-header-nav">
+                                <a href="#entreprise" class="active">Entreprise</a>
+                                <a href="#annonceur">Annonceur</a>
+                                <a href="#utilisation">Utilisation</a>
+                                <a href="#faq">faq</a>
+
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ul-header-bottom-right">
+                    <div class="ul-header-2-bottom-btns">
+                        <a href="contact.html" class="ul-2-btn d-xxs-none"><span style="background-color: #052859; border-radius: 50%;"><img src="assets/img/download.png"></span> Télécharger l'App</a>
+                        <a href="services.html" class="ul-2-btn d-xxs-none">Connexion</a>
+                    </div>
+                    <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-right-arrow"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION  -->
+
+
+    <main class="main_style">
+        <!-- SECTION LISTE DES TAXES -->
+        <section class="ul-clients-2 pb-0 wow animate__fadeInUp tax_country" style="padding-top: 30px; margin-bottom: 30px;">
+            <div>
+                <div class="swiper ul-clients-2-slider" style="padding: 7px;">
+                    <div class="swiper-wrapper align-items-center">
+                        <!-- single client -->
+                        <div class="swiper-slide" data-swiper-autoplay="2000">
+                            <div class="country-taxe">
+                                <div class="drapeau">
+                                    <img src="assets/img/benin.png" alt="">
+                                    <span>Bénin</span> 
+                                </div>
+                                <div class="taxe">
+                                    18%
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single client -->
+                        <div class="swiper-slide">
+                            <div class="country-taxe">
+                                <div class="drapeau">
+                                    <img src="assets/img/bresil.png" alt="">
+                                    <span>Brésil</span> 
+                                </div>
+                                <div class="taxe">
+                                    18%
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single client -->
+                        <div class="swiper-slide">
+                            <div class="country-taxe">
+                                <div class="drapeau">
+                                    <img src="assets/img/guinee.png" alt="">
+                                    <span>Guinée</span> 
+                                </div>
+                                <div class="taxe">
+                                    56%
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single client -->
+                        <div class="swiper-slide">
+                            <div class="country-taxe">
+                                <div class="drapeau">
+                                    <img src="assets/img/gabon.png" alt="">
+                                    <span>Gabon</span> 
+                                </div>
+                                <div class="taxe">
+                                    18%
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single client -->
+                        <div class="swiper-slide">
+                            <div class="country-taxe">
+                                <div class="drapeau">
+                                    <img src="assets/img/togo.png" alt="">
+                                    <span>Togo</span> 
+                                </div>
+                                <div class="taxe">
+                                    16%
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single client -->
+                        <div class="swiper-slide">
+                            <div class="country-taxe">
+                                <div class="drapeau">
+                                    <img src="assets/img/niger.png" alt="">
+                                    <span>Niger</span> 
+                                </div>
+                                <div class="taxe">
+                                    17%
+                                </div>
+                            </div>
+                        </div>
+                        <!-- single client -->
+                        <div class="swiper-slide">
+                            <div class="country-taxe">
+                                <div class="drapeau">
+                                    <img src="assets/img/niger.png" alt="">
+                                    <span>Sénégal</span> 
+                                </div>
+                                <div class="taxe">
+                                    18%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION LISTE DES TAXES -->
+        
+        <!-- SECTION BANNIERE -->
+        <section class="ul-banner-2 wow animate__fadeInUp ban">
+            <div class="ul-banner-2-container" style="position: relative;">
+                <div class="form_style">
+                    <img src="assets/img/etoile1.png" alt="" style="position: absolute; right: 50px;top: 50px;z-index: 1000;" class="animate__animated animate__pulse animate__infinite">
+                    <img src="assets/img/etoile2.png" alt="" style="position: absolute; right: 450px;top: 150px;z-index: 1000;" class="animate__animated animate__pulse animate__infinite">
+                    <img src="assets/img/share.png" alt=""style="position: absolute; right: 325px;bottom: 45px;z-index: 1000;" class="animate__animated animate__pulse animate__infinite">
+                    <img src="assets/img/partage.png" alt="" style="position: absolute; right: 500px;top: 400px;z-index: 1000;" class="animate__animated animate__pulse animate__infinite">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row" style="position: relative; z-index: 10;">
+                            <div class="col-6">
+                                <p style="font-size: 13px;"><img src="assets/img/google-play.png" alt="" style="width: 14%;"> Google Play  <img src="assets/img/etoile1.png" alt="" style="width: 8%;">4,5M</p>
+                            </div>
+                            <div class="col-6">
+                                <p style="font-size: 13px;"><img src="assets/img/app_store.png" alt="" style="width: 14%;"> App Store  <img src="assets/img/etoile1.png" alt="" style="width: 8%;"> 2,8M</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+                <div class="ul-banner-2-content row align-items-lg-center align-items-end justify-content-between">
+                    <div class="col-md-12">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade"  data-bs-ride="carousel" data-bs-pause="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="5000"  data-bs-touch="false">
+                                <div class="row ul-banner-2-content">
+                                  <div class="col-md-7">
+                                        <div class="ul-banner-2-txt">
+                                            <h1 class="ul-banner-2-title">Booster la visibilité de votre entreprise</h1>
+                                            <p class="ul-banner-2-descr">Avec spacesboost plus de soucis de augmenter tes chiffres d'affaires</p>
+                
+                                            <ul class="mb-5">
+                                                <li style="font-size: 22px; margin-bottom: 20px; font-weight: 600; line-height: 30px;"> <img src="assets/img/check_blanc.png" width="14px" alt=""> En faisant des statuts whatsApp</li>
+                                                <li style="font-size: 22px; margin-bottom: 20px; font-weight: 600; line-height: 30px;"> <img src="assets/img/check_blanc.png" width="14px" alt=""> En gagnant plus de temps </li>
+                                                <li style="font-size: 22px; margin-bottom: 20px; font-weight: 600; line-height: 30px;"> <img src="assets/img/check_blanc.png" width="14px" alt=""> En atteignant facilement mes objectifs</li>
+                                            </ul>
+                                            <div class="ul-banner-2-btns">
+                                                <a href="#" class="btn btn-lg btn-primary">Inscription</a>
+                                                <a href="#" class="btn btn-lg btn-success" style="background-color: #08A94E;">Connexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-md-5 text-center">
+                                        <!-- <div class="ul-banner-2-img"> -->
+                                        <div>
+                                            <img src="assets/img/ecran.png" class="slide_img" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item"  data-bs-interval="5000">
+                                <div class="row ul-banner-2-content">
+                                    <div class="col-md-7">
+                                        <div class="ul-banner-2-txt">
+                                            <h1 class="ul-banner-2-title">Gagner de l'argent en ligne.</h1>
+                                            <p class="ul-banner-2-descr">Sur le téléphone, l’ordinateur ou la tablette, que vous soyez gagner grâce à SPACESBOOST</p>
+                
+                                            <ul class="mb-5">
+                                                <li style="font-size: 22px; margin-bottom: 20px; font-weight: 600; line-height: 30px;"> <img src="assets/img/check_blanc.png" width="14px" alt=""> En faisant des statuts whatsApp</li>
+                                                <li style="font-size: 22px; margin-bottom: 20px; font-weight: 600; line-height: 30px;"> <img src="assets/img/check_blanc.png" width="14px" alt=""> En gagnant plus de temps </li>
+                                                <li style="font-size: 22px; margin-bottom: 20px; font-weight: 600; line-height: 30px;"> <img src="assets/img/check_blanc.png" width="14px" alt=""> En atteignant facilement mes objectifs</li>
+                                            </ul>
+                                            <div class="ul-banner-2-btns">
+                                                <a href="#" class="btn btn-lg btn-primary">Inscription</a>
+                                                <a href="#" class="btn btn-lg btn-success" style="background-color: #08A94E;">Connexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-md-5 text-center">
+                                        <!-- <div class="ul-banner-2-img"> -->
+                                        <div>
+                                            <img src="assets/img/ecran2.png" class="slide_img" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- SECTION BANNIERE -->
+
+        <!-- PARTENAIRES -->
+        <section class="ul-clients-2 mt-5 pb-0 wow animate__fadeInUp">
+            <div>
+                <span class="ul-clients-2-title">Nous travaillons en partenariat avec des entreprises de premier plan du monde entier :</span>
+                <div class="swiper ul-clients-2-slider">
+                    <div class="swiper-wrapper align-items-center">
+                        <!-- single client -->
+                        <div class="swiper-slide"><img src="assets/img/client-1.png" alt="Client Image"></div>
+                        <!-- single client -->
+                        <div class="swiper-slide"><img src="assets/img/client-2.png" alt="Client Image"></div>
+                        <!-- single client -->
+                        <div class="swiper-slide"><img src="assets/img/client-3.png" alt="Client Image"></div>
+                        <!-- single client -->
+                        <div class="swiper-slide"><img src="assets/img/client-4.png" alt="Client Image"></div>
+                        <!-- single client -->
+                        <div class="swiper-slide"><img src="assets/img/client-5.png" alt="Client Image"></div>
+                        <!-- single client -->
+                        <div class="swiper-slide"><img src="assets/img/client-6.png" alt="Client Image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PARTENAIRES -->
+
+        <!-- ENTREPRISE  -->
+        <section class="entreprise ul-how-it-works mt-5" id="entreprise">
+            <div>
+                <!--  -->
+                <div class="row ul-bs-row">
+                    <!-- txt -->
+                    <div class="col-md-6 wow animate__fadeInLeft">
+                        <div class="card1 ul-how-it-works-list">
+                            <!-- item -->
+                            <p style="color: #FCBC1E;">Que pouvez-vous faire avec SPACEBOOST?</p>
+                        <h1 style="font-weight: bolder;" class="mb-4">En tant qu'entreprise</h1>
+                        <p>
+                            Vous pouvez faire des campagnes publicitaires, vendre des produits ou services, faires des enquêtes de sondage, avoir une boutique en ligne.
+                        </p>
+                        <p>
+                            Notre plateforme est un canal de marketing puissant, un tout en un pour les entreprises qui leur permet d’atteindre un public plus large et de trouver de nouveaux clients.
+                        </p>
+
+                        <a href="#" class="btn btn-warning btn-lg mt-5 btn-size">Faire une Annonce</a>
+                        </div>
+                    </div>
+
+                    <!-- img -->
+                    <div class="col-md-6 wow animate__fadeInRight">
+                        <div class="card2" style="background-image: url(assets/img/form1.png); background-position: bottom; background-repeat: no-repeat;">
+                            <div>
+                                <div class="">
+                                <img src="assets/img/tel2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ENTREPRISE  -->
+
+        <!-- CTA1 -->
+        <section class="cta mt-5 pb-0 wow animate__fadeInUp" style="position: relative;">
+                <div class="row">
+
+                    <!-- txt -->
+                    <div class="col-md-12">
+                        <div class="cta-block">
+                            <h2 class="text-center text-light" style="margin-bottom: 50px;">Obtenez l’application pour atteindre une grande cible!</h2>
+                            <div class="text-center" style="margin:auto;">
+                                <a href="#" class="btn btn-warning btn-lg btn-size"><span style="background-color: #052859; border-radius: 50%;"><img src="assets/img/download.png"></span> Télécharger l'App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_style">
+                    <img src="assets/img/form_01.png" alt="" style="position: absolute; top: 0; right: 0; height: 100%; z-index: 10;">
+                    <img src="assets/img/form_02.png" alt="" style="position: absolute; top: 0; right: 0; height: 100%; z-index: 5;">
+                    <img src="assets/img/form_03.png" alt="" style="position: absolute; top: 0; right: 0; height: 100%;z-index: 3;">
+                </div>
+                <div class="form_style">
+                    <img src="assets/img/form_right1.png" alt="" style="position: absolute; top: 0; left: 0; height: 100%; z-index: 3;">
+                    <img src="assets/img/form_right2.png" alt="" style="position: absolute; top: 0; left: 0; height: 100%; z-index: 5;">
+                    <img src="assets/img/form_right3.png" alt="" style="position: absolute; top: 0; left: 0; height: 100%;z-index: 10;">
+                </div>
+        </section>
+        <!-- CTA1 -->
+
+         <!-- ANNONCE  -->
+         <section class="annonce entreprise ul-how-it-works mt-5" id="annonceur">
+            <div>
+                <!--  -->
+                <div class="row ul-bs-row">
+                    <!-- txt -->
+                    <div class="col-md-6 wow animate__fadeInTopLeft">
+                        <div class="card1 ul-how-it-works-list">
+                            <!-- item -->
+                            <p style="color: #FCBC1E;">Que pouvez-vous faire avec SPACEBOOST?</p>
+                        <h1 style="font-weight: bolder;" class="mb-4">En tant qu'annonceur</h1>
+                        <p>
+                            Les annonceurs sur Spaces sont des personnes qui utilisent leurs statuts WhatsApp ou leurs stories (WhatsApp, Instagram, Facebook) pour aider des entreprises à toucher un large public.
+                        </p>
+                        <p>
+                            Peu importe ton sujet d'expertise, ton univers, tes réseaux sociaux de prédilection ou la taille de ta communauté, tous les profils sont invités à s'inscrire sur SPACEBOOST.
+                        </p>
+
+                        <a href="#" class="btn btn-warning btn-lg mt-5 btn-size">Inscris - toi</a>
+                        </div>
+                    </div>
+
+                    <!-- img -->
+                    <div class="col-md-6 card2 wow animate__fadeInTopRight"  style="background-image: url(assets/img/form1.png); background-position: bottom; background-repeat: no-repeat;">
+                        <div>
+                            <div>
+                                <div class="">
+                                <img src="assets/img/tel4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ANNONCE  -->
+
+        <!-- CTA2 -->
+        <section class="cta mt-5 pb-0 wow animate__fadeInUp" style="position: relative;">
+            <div class="row">
+
+                <!-- txt -->
+                <div class="col-md-12">
+                    <div class="cta-block">
+                        <h2 class="text-center text-light" style="margin-bottom: 50px;">Obtenez l’application  Et gagne de l'argent facilement grâce à tes statuts.</h2>
+                        <div class="text-center" style="margin:auto;">
+                            <a href="#" class="btn btn-warning btn-lg btn-size"><span style="background-color: #052859; border-radius: 50%;"><img src="assets/img/download.png"></span> Télécharger l'App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_style">
+                <img src="assets/img/form_01.png" alt="" style="position: absolute; top: 0; right: 0; height: 100%; z-index: 10;">
+                <img src="assets/img/form_02.png" alt="" style="position: absolute; top: 0; right: 0; height: 100%; z-index: 5;">
+                <img src="assets/img/form_03.png" alt="" style="position: absolute; top: 0; right: 0; height: 100%;z-index: 3;">
+            </div>
+            <div class="form_style">
+                <img src="assets/img/form_right1.png" alt="" style="position: absolute; top: 0; left: 0; height: 100%; z-index: 3;">
+                <img src="assets/img/form_right2.png" alt="" style="position: absolute; top: 0; left: 0; height: 100%; z-index: 5;">
+                <img src="assets/img/form_right3.png" alt="" style="position: absolute; top: 0; left: 0; height: 100%;z-index: 10;">
+            </div>
+    </section>
+        <!-- CTA2 -->
+
+        <!-- MOYEN DE PAYEMENT -->
+        <section class="mt-5 pb-0 wow animate__fadeInUp">
+            <div class="moyen-payement">
+                <!--  -->
+                <div class="row">
+                    <!-- txt -->
+                    <div class="col-md-6 mb-5">
+                        <h1 style="font-weight: 900;" class="mb-5">Les Moyens de Payements</h1>
+                        <div id="payment-logos" class="d-flex flex-column align-items-center">
+                            <div class="logo_mp mb-4"><img src="assets/img/mtn.png" class="payment-img" alt="Visa"></div>
+                            <div class="logo_mp mb-4"><img src="assets/img/moov.png" class="payment-img" alt="MasterCard"></div>
+                            <div class="logo_mp mb-4"><img src="assets/img/mastercard.png" class="payment-img" alt="PayPal"></div>
+                            <div class="logo_mp mb-4"><img src="assets/img/visa.png" class="payment-img" alt="Orange Money"></div>
+                            <div class="logo_mp mb-4"><img src="assets/img/american.png" class="payment-img" alt="Moov"></div>
+                          </div>
+                    </div>
+                    <div class="col-md-6" style="text-align: center;">
+                        <img src="assets/img/tel3.png" alt="" >
+                    </div>
+                </div>
+            </div>
+
+           
+        </section>
+        <!-- MOYEN DE PAYEMENT  -->
+
+         <!-- UTILISATION  -->
+        <section class="mt-5 pb-0 wow animate__fadeInUp" id="utilisation">
+            <div class="utilisation">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center mb-5">
+                            Comment commencer à utiliser Spacesboost App ?
+                        </h1>
+                    </div>
+                    <div class="col-md-12 mb-5">
+                        <div class="row text-light">
+                            <div class="col-md-4 mb-4" style="margin: auto;">
+                                <div>
+                                    <h2 class="text-center"> <span style="margin-bottom: 15px; width: 40px;height: 40px;border-radius: 30px; background-color: #FCBC1E;font-weight: bolder;font-size: large;padding: 10px;text-align: center; display: inline-block;">1</span></h2>
+                                </div>
+                                <div class="text-center"><p> Télécharger GRATUITEMENT</p></div>
+                            </div>
+                            <div class="col-md-4 mb-4" style="margin: auto;">
+                                <div>
+                                    <h2 class="text-center"> <span style="margin-bottom: 15px; width: 40px;height: 40px;border-radius: 30px; background-color: #FCBC1E;font-weight: bolder;font-size: large;padding: 10px;text-align: center; display: inline-block;">2</span></h2>
+                                </div>
+                                <div class="text-center"><p>Créez et validez votre compte</p></div>
+                            </div>
+                            <div class="col-md-4 mb-4" style="margin: auto;">
+                                <div>
+                                    <h2 class="text-center"> <span style="margin-bottom: 15px; width: 40px;height: 40px;border-radius: 30px; background-color: #FCBC1E;font-weight: bolder;font-size: large;padding: 10px;text-align: center; display: inline-block;">3</span></h2>
+                                </div>
+                                <div class="text-center"><p>Commencez à GAGNER</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h2 style="color: white; text-align: center;">
+                            Comment commencer à utiliser Spacesboost App ?
+                        </h2>
+                    </div>
+                    <div class="col-md-12 mt-5">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div  style="background-color: #697E9B; border-radius: 15px; color: white; padding: 10px;">
+                                 <h4>✅</h4>
+                                 <h6>Pour les entreprises</h6>
+                                 <p>Créez votre annonce directement dans l’onglet "Créer une annonce" et laissez notre réseau d’annonceurs la partager dans leurs statuts WhatsApp et stories.</p>
+                                </div>
+                             </div>
+                             <div class="col-md-6 mb-4">
+                                <div  style="background-color: #697E9B; border-radius: 15px; color: white; padding: 10px;">
+                                 <h4>🏢</h4>
+                                 <h6>Pour les annonceurs</h6>
+                                 <p>Consultez les annonces disponibles dans l’onglet "Annonces" et commencez à les partager dans vos statuts WhatsApp pour gagner de l’argent facilement.</p>
+                                </div>
+                             </div>
+                             <div class="col-md-6 mb-4">
+                                <div  style="background-color: #697E9B; border-radius: 15px; color: white; padding: 10px;">
+                                 <h4>📷</h4>
+                                 <h6>Fournissez la preuve</h6>
+                                 <p>Afin de garantir que chaque annonce est réellement publiée, les annonceurs doivent envoyer une preuve après avoir partagé un statut.</p>
+                                </div>
+                             </div>
+                             <div class="col-md-6 mb-4">
+                                <div  style="background-color: #697E9B; border-radius: 15px; color: white; padding: 10px;">
+                                 <h4>💸</h4>
+                                 <h6>Retirez vos gains facilement et à tout moment</h6>
+                                 <p>Une fois que vous avez accumulé des revenus grâce au partage de campagnes, vous pouvez les retirer directement depuis votre portefeuille.</p>
+                                </div>
+                             </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="mt-5 mb-5 text-center text-light">
+                        <p>Laissez SpacesBoots tourner en arrière-plan pendant que vous partagez des campagnes sur vos statuts et stories — continuez à générer des revenus de manière passive, sans interrompre votre quotidien</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- UTILISATION  -->
+         
+        <!-- QUI SOMMES NOUS -->
+        <section class="about-us ul-blogs-2 mt-5 wow animate__fadeInUp">
+            <div>
+                <h1 class="text-center mb-4 wow animate__fadeInUp" style="font-weight: bold;">Qui sommes - nous ?</h1>
+                <p class="text-center mb-5 wow animate__fadeInUp">
+                    SPACEBOOST est une plateforme de marketing d’influence qui pilote vos campagnes publicitaires et mobilise des influenceurs autour de cette campagne.
+                    Notre objectif est de placer les humains au cœur des campagnes publicitaires en fournissant toujours les meilleures solutions pour permettre aux chefs d’entreprise africains de collaborer avec les influenceurs concernés et générer un réel impact commercial. Avec SPACEBOOST utilisez l’impact humain pour
+                </p>
+            </div>
+
+            <div class="row ul-bs-row row-cols-lg-3 row-cols-sm-2 row-cols-1 ul-blogs-row">
+                <!-- single blog -->
+                <div class="col wow animate__fadeInUp">
+                    <div class="ul-blog-2">
+                        <div class="ul-blog-2-img">
+                            <img src="assets/img/card_img1.png" alt="Blog Image">
+                        </div>
+                        <div class="ul-blog-2-txt">
+                            <a href="blog-details.html" class="ul-blog-2-title"> Faire croître votre entreprise</a>
+                            <div class="ul-blog-2-infos">
+                                <ul class="mb-5">
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Augmentation des revenus</li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Renforcement de la compétitivité </li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Création d’emplois</li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Accès facilité au financemen</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single blog -->
+                <div class="col wow animate__fadeInRight">
+                    <div class="ul-blog-2">
+                        <div class="ul-blog-2-img">
+                            <img src="assets/img/card_img2.png" alt="Blog Image">
+                        </div>
+                        <div class="ul-blog-2-txt">
+                            <a href="blog-details.html" class="ul-blog-2-title">Booster vos ventes</a>
+                            <div class="ul-blog-2-infos">
+                                <ul class="mb-5">
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Amélioration de la rentabilité</li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Renforcement de la notoriété de la marque </li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Optimisation de la trésorerie</li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Possibilité d’investissements stratégiques</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- single blog -->
+                <div class="col wow animate__fadeInLeft">
+                    <div class="ul-blog-2">
+                        <div class="ul-blog-2-img">
+                            <img src="assets/img/card_img3.png" alt="Blog Image">
+                        </div>
+                        <div class="ul-blog-2-txt">
+                            <a href="blog-details.html" class="ul-blog-2-title">Installer votre notoriété</a>
+                            <div class="ul-blog-2-infos">
+                                <ul class="mb-5">
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Fidélisation des clients</li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Différenciation face à la concurrence </li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Attraction de nouveaux clients</li>
+                                    <li class="mb-2" style="display: flex; align-items: center;"> <img src="assets/img/check_blanc.png" width="10px" alt="" style="margin-right: 5px"> Pouvoir de négociation accru</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- QUI SOMMES NOUS-->
+
+
+        <!-- FAQ SECTION  -->
+        <section class="faq mt-5 mb-5 wow animate__fadeInUp" id="faq">
+            <div class="ul-container">
+                <div class="row ul-bs-row ul-faq-row row-cols-md-2 row-cols-1">
+                    <!-- img -->
+                    <div class="col mb-5">
+                        <div class="ul-faq-txt">
+                            <span class="ul-2-section-sub-title">FAQ</span>
+                            <h1>Questions fréquemment posées</h1>
+                            <p class="text-light">Les questions les plus fréquentes, répondues clairement pour vous : nous sommes là pour vous aider à trouver les informations que vous cherchez.</p>
+                            <ul class="ul-faq-2-list">
+                                <li>Service client disponible h24</li>
+                                <li>Plus proche du public</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div class="col">
+                        <div class="ul-faq-accordion ul-accordion mt-0">
+                            <div class="ul-single-accordion-item open">
+                                <div class="ul-single-accordion-item__header">
+                                    <div class="left">
+                                        <h3 class="ul-single-accordion-item__title">Quels réseaux sociaux sont pris en charge ?</h3>
+                                    </div>
+                                    <span class="icon"><i class="flaticon-right"></i></span>
+                                </div>
+
+                                <div class="ul-single-accordion-item__body">
+                                    <p>Actuellement, SpacesBoost supporte <span class="text-success">whatsapp</span>. </p>
+                                       <p> Nous prévoyons d’en ajouter d'autres selon les besoins de la communauté:</p>
+                                       <p>
+                                        Instagram, Facebook, TikTok, YouTube et X (anciennement Twitter)
+                                       </p>
+                                </div>
+                            </div>
+
+                            <div class="ul-single-accordion-item">
+                                <div class="ul-single-accordion-item__header">
+                                    <div class="left">
+                                        <h3 class="ul-single-accordion-item__title">Est-ce que SpacesBoost garantit des résultats ?</h3>
+                                    </div>
+                                    <span class="icon"><i class="flaticon-right"></i></span>
+                                </div>
+
+                                <div class="ul-single-accordion-item__body">
+                                    <p>Nous ne garantissons pas de ventes immédiates, mais nous mettons tout en œuvre pour que les campagnes soient ciblées, pertinentes et transparentes, avec des influenceurs réellement engagés.</p>
+                                </div>
+                            </div>
+
+                            <div class="ul-single-accordion-item">
+                                <div class="ul-single-accordion-item__header">
+                                    <div class="left">
+                                        <h3 class="ul-single-accordion-item__title">Comment sont gérés les paiements ?</h3>
+                                    </div>
+                                    <span class="icon"><i class="flaticon-right"></i></span>
+                                </div>
+
+                                <div class="ul-single-accordion-item__body">
+                                    <p>Les entreprises paient en avance. Les fonds sont conservés en toute sécurité par SpacesBoost et ne sont libérés à l’influenceur qu’après validation du travail.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ SECTION END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="ul-footer ul-footer-2" style="background-color: #052859; color: white;">
+        <!-- footer top -->
+        <div class="ul-footer-top" style="background-color: white;">
+            <div class="ul-container">
+                <div class="ul-footer-top-contact-infos">
+                    <!-- single info -->
+                    <div class="ul-footer-top-logo">
+                        <a href="index.html"><img src="assets/img/logo_spaceboost.png" alt="logo"></a>
+                        <div class="ul-footer-socials">
+                            <a href="#"><i class="flaticon-facebook-app-symbol"></i></a>
+                            <a href="#"><i class="flaticon-twitter"></i></a>
+                            <a href="#"><i class="flaticon-linkedin-big-logo"></i></a>
+                            <a href="#"><i class="flaticon-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="ul-footer-top-contact-info">
+                        <!-- icon -->
+                        <div class="ul-footer-top-contact-info-icon"><i class="flaticon-telephone"></i></div>
+                        <!-- txt -->
+                        <div class="ul-footer-top-contact-info-txt">
+                            <span class="ul-footer-top-contact-info-label">Appelez</span>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="tel:20866660112">+229 970000000</a></h5>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="ul-footer-top-contact-info">
+                        <!-- icon -->
+                        <div class="ul-footer-top-contact-info-icon"><i class="flaticon-mail"></i></div>
+                        <!-- txt -->
+                        <div class="ul-footer-top-contact-info-txt">
+                            <span class="ul-footer-top-contact-info-label">Email</span>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="mailto:info@exmple.com">info@spacesboost.com</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer middle -->
+        <div class="ul-footer-middle">
+            <div class="ul-container">
+                <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
+                    <div class="ul-footer-about">
+                        <h3 class="ul-footer-widget-title text-light">A Propos</h3>
+                        <p class="ul-footer-about-txt text-light">SpacesBoost est une plateforme panafricaine innovante qui connecte les entreprises avec des influenceurs pour dynamiser leur visibilité et leur croissance en ligne.</p>
+                        <a href="contact.html" class="ul-footer-about-btn text-light">Contactez-nous <i class="flaticon-top-right"></i></a>
+                    </div>
+
+                    <div class="ul-footer-widget">
+                        <h3 class="ul-footer-widget-title text-light">Navigation</h3>
+
+                        <div class="ul-footer-widget-links text-light">
+                            <a href="#" class="text-light">Entreprise</a>
+                            <a href="#" class="text-light">Annonceur</a>
+                            <a href="#" class="text-light">Qui sommes-nous</a>
+                            <a href="#" class="text-light">faq</a>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer-widget ul-footer-recent-posts">
+                        <h3 class="ul-footer-widget-title text-light">Légal</h3>
+
+                        <div class="ul-footer-widget-links text-light">
+                            <a href="#" class="text-light">Conditions Générales d’Utilisation</a>
+                            <a href="#" class="text-light">Politique de Confidentialité</a>
+                            <a href="#" class="text-light">Mentions légales</a>
+                            <a href="#" class="text-light">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer-widget ul-nwsltr-widget">
+                        <h3 class="ul-footer-widget-title text-light">Instalation</h3>
+                        <div class="ul-footer-widget-links text-light">
+                            <span><img src="assets/img/app-store.png"></span>
+                            <span><img src="assets/img/play-store.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div class="ul-container">
+            <div class="ul-footer-bottom">
+                <div class="ul-footer-bottom-wrapper justify-content-center">
+                    <p class="copyright-txt text-light">Copyright &copy;
+                        <script>document.write(new Date().getFullYear())</script> Tous droit réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/scrollspy/simple-scrollspy.min.js"></script>
+
+
+    <!-- custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tab.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper', {
+          autoplay: true,
+          loop: true,
+          autrewind: true,
+          initialSlide: 0, // défini l'index du premier élément
+          autoplayTimeout: 5000,
+          disableOnInteraction: true,
+          speed: 1000,
+          spaceBetween: 30,
+          slidesPerView: 5,
+          centeredSlides: true,
+        });
+      
+        swiper.on('resize', function() {
+          if (swiper.params.breakpoints.landscape) {
+            // ajuster les options pour les écrans grands
+            swiper.params.slidesPerView = 5;
+          } else if (swiper.params.breakpoints.tablet) {
+            // ajuster les options pour les écrans tablettes
+            swiper.params.slidesPerView = 5;
+          } else {
+            // ajuster les options pour les écrans mobiles
+            swiper.params.slidesPerView = 2;
+          }
+        });
+      </script>
+
+<script>
+    const logos = document.querySelectorAll('.logo_mp');
+    let index = 0;
+  
+    function animateLogos() {
+      logos.forEach((logo_mp, i) => {
+        const img = logo_mp.querySelector('img');
+        img.classList.remove('zooming');
+        img.style.opacity = '0.4';
+      });
+  
+      const current = logos[index].querySelector('img');
+      current.classList.add('zooming');
+      current.style.opacity = '1';
+  
+      index = (index + 1) % logos.length;
+    }
+  
+    setInterval(animateLogos, 1500); // Change toutes les 1.5s
+  </script>
+</body>
+
+</html>
