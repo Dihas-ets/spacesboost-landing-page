@@ -9,8 +9,8 @@
 
     <!-- libraries CSS -->
     <link rel="stylesheet" href="assets/icon/flaticon_digicom.css">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <!--<link rel="stylesheet" href="assets/vendor/splide/splide.min.css"> -->
     <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -213,7 +213,7 @@
         <!-- header -->
         <div class="ul-sidebar-header">
             <div class="ul-sidebar-header-logo">
-                <a href="index.html">
+                <a href="/">
                     <img src="assets/img/logo_spaceboost.png" alt="logo" class="logo">
                 </a>
             </div>
@@ -245,7 +245,7 @@
         <div class="ul-header-bottom to-be-sticky wow animate__slideInDown" >
             <div class="ul-header-bottom-wrapper ul-header-container">
                 <div class="logo-container">
-                    <a href="index.html" class="d-inline-block"><img src="assets/img/logo_spaceboost.png" alt="logo" class="logo"></a>
+                    <a href="/" class="d-inline-block"><img src="assets/img/logo_spaceboost.png" alt="logo" class="logo"></a>
                 </div>
 
                 <div class="ul-header-bottom-center">
@@ -969,9 +969,9 @@
     <!-- FOOTER SECTION END -->
 
     <!-- libraries JS -->
-    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="assets/vendor/splide/splide.min.js"></script>
-    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <!--<script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script> -->
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/animate-wow/wow.min.js"></script>
     <script src="assets/vendor/fslightbox/fslightbox.js"></script>
@@ -983,6 +983,8 @@
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/accordion.js"></script>
     <script src="assets/js/progressbar.js"></script>
+
+
 
     <script>
         var swiper = new Swiper('.swiper', {
@@ -998,18 +1000,18 @@
           centeredSlides: true,
         });
       
-        swiper.on('resize', function() {
-          if (swiper.params.breakpoints.landscape) {
-            // ajuster les options pour les écrans grands
-            swiper.params.slidesPerView = 5;
-          } else if (swiper.params.breakpoints.tablet) {
-            // ajuster les options pour les écrans tablettes
-            swiper.params.slidesPerView = 5;
-          } else {
-            // ajuster les options pour les écrans mobiles
-            swiper.params.slidesPerView = 2;
-          }
-        });
+        // swiper.on('resize', function() {
+        //   if (swiper.params.breakpoints.landscape) {
+        //     // ajuster les options pour les écrans grands
+        //     swiper.params.slidesPerView = 5;
+        //   } else if (swiper.params.breakpoints.tablet) {
+        //     // ajuster les options pour les écrans tablettes
+        //     swiper.params.slidesPerView = 5;
+        //   } else {
+        //     // ajuster les options pour les écrans mobiles
+        //     swiper.params.slidesPerView = 2;
+        //   }
+        // });
     </script>
 
     <script>
