@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_spaceboost_sm.png">
+    <title>SPACESBOOST DEMANDE DE SUPPRESSION</title>
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/icon/flaticon_digicom.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .main_style{
+            padding: 0 35px;
+        }
+        .tax_country{
+            margin-top: 50px;
+        }
+        .ban{
+            border-radius: 20px;
+        }
+        .ul-header .ul-header-bottom{
+            top: 0;
+            background-color: white;
+        }
+        .ul-header-2 .ul-header-nav a{
+            color: black;
+        }
+        .ul-header-2 .ul-header-bottom.sticky .ul-header-bottom-wrapper{
+            background-color: white;
+            width: 100%;
+        }
+        .ul-header-2-bottom-btns a:nth-child(1){
+            color: black;
+        }
+        .ul-header-2-bottom-btns a:nth-child(2){
+            background-color: #052859;
+            color: white;
+        }
+        .ul-banner-2-container{
+            padding: 40px;
+        }
+        .ul-banner-2-container{
+            border-radius: 20px;
+            background-color: #052859;
+        }
+        .ul-banner-2-title {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -1.12px;
+            }
+        .country-taxe{
+            display: flex;
+            border: 1px solid black; 
+            padding: 13px; 
+            border-radius: 5px; 
+            background-color: white; 
+            align-items: center; 
+            justify-content: space-between;
+        }
+        .country-taxe span{
+            margin-left: 5px;
+        }
+        .taxe{
+            border-radius: 5px; 
+            background-color: #F7A406; 
+            padding: 5px 15px; 
+            color: white;
+        }
+        .slide_img{
+            width: 80%;
+        }
+        .entreprise .card1, .faq{
+        background-color: #052859; 
+        color: white; 
+        padding: 50px;
+        border-radius: 20px;
+        }
+        .entreprise .card1 h1, .cta h2, .utilisation h1, .faq h1{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 56px;
+        letter-spacing: -0.84px;
+        color: white;
+        }
+        .entreprise .card1 p, .utilisation p, .about-us p, .faq p{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: normal;
+        }
+        .entreprise .card2{
+            padding: 50px;
+            background-color: #052859;
+            border-radius: 20px;
+        }
+        .cta{
+            background-color: #052859; 
+            border-radius: 20px; 
+        }
+        .cta-block{
+            padding: 50px 75px;
+            position: relative;
+            z-index: 500;
+        }
+
+        .moyen-payement{
+            background-color: #052859; 
+            color: white; 
+            padding: 50px; 
+            border-radius: 20px; 
+            align-items: center;
+        }
+        .utilisation{
+            background-color: #052859; 
+            border-radius: 20px; 
+            padding: 50px;
+        }
+
+        .payment-img {
+        opacity: 0.4;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+    @keyframes zoomInOut {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .zooming {
+      animation: zoomInOut 1s ease-in-out;
+      opacity: 1 !important;
+    }
+
+    @media screen and (min-width: 993px) {
+        .main-container{
+            margin: 90px auto!important;
+        }
+    }
+    @media screen and (max-width: 765px) {
+        .ul-banner-2-content{
+                flex-direction: column-reverse;
+            }
+    }
+        @media screen and (max-width: 992px) {
+            body{
+                overflow-x: clip;
+            }
+            .ul-header .ul-header-bottom{
+            position: sticky;
+        }
+            .main_style {
+                padding: 0 1px;
+            }
+            .tax_country{
+            margin-top: 0px;
+        }
+            .ul-banner-2-btns{
+                justify-content: center;
+            }
+            .btn-size{
+                width: 100%;
+            }
+            .entreprise .card1, .entreprise .card2, .utilisation, .faq{
+            padding: 20px;
+            }
+            .entreprise .card1 h1, .cta h2, .utilisation h1, .faq h1{
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 42px;
+            }
+            .entreprise .card1 p, .utilisation p, .about-us p, .faq p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: normal;
+            }
+            .cta-block{
+                padding: 15px;
+            }
+            .form_style{
+                display: none;
+            }
+            .slide_img{
+            width: 100%;
+            }
+            .moyen-payement{
+            padding: 20px; 
+            }
+        }
+
+    </style>
+    <style>
+
+       
+        :root {
+            --primary-color: #052859;
+            --secondary-color: #fcbc1e;
+        }
+        
+        body {
+            /*background: linear-gradient(135deg, var(--primary-color) 0%, #0a3d7a 100%);*/
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: initial!important;
+        }
+        
+        .main-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+        
+        .header-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px 15px 0 0;
+            text-align: center;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .warning-icon {
+            color: #856404;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #041f47;
+            border-color: #041f47;
+            transform: translateY(-2px);
+        }
+        
+        .btn-warning {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-warning:hover {
+            background-color: #e6a91a;
+            border-color: #e6a91a;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .form-control {
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            padding: 0.75rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.2rem rgba(252, 188, 30, 0.25);
+        }
+        
+        .rules-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .rule-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+        }
+        
+        .rule-icon {
+            color: var(--primary-color);
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        
+        .step-number {
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .logo {
+            margin: auto;
+        }
+        
+        .content-section {
+            padding: 2rem;
+        }
+        
+        .form-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .success-message {
+            display: none;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <!-- header -->
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo_spaceboost.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <!-- sidebar closer -->
+            <button class="ul-sidebar-closer"><i class="flaticon-close-1"></i></button>
+        </div>
+
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Suivez-nous</span>
+
+            <div class="ul-sidebar-footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61566792945862"><i class="flaticon-facebook-app-symbol"></i></a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2F%40SpacesBoost%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEe0dxOoNnLljc5TxhSKQLLTPWWjufRfgm8tFdgh6dGq7htfG0c6DRs1XfZYGA_aem_FCVwafPgQ3MnN1xsmcDv2g&h=AT0jCmSJZN49jhfpgFoe5lxfWJWPRKMXIdy_ebZp1Yu465_uNEsiJy6twVmrxHIjUvkoQdIbA8H-6CwCXbEJ-QwyOS-4_n-fmaGmsCrPHnMfzvdqxfdtfLWVYx7E3rsQJPj0"><i class="fab fa-youtube"></i></a>
+                            <a href="https://tiktok.com/@spacesboost?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEeu-EbeZtZFWP7SkY8pPz6x-0vaN85B6sPnNEhZyVeHR98joStaJJ2IZqrk-g_aem_ZmZ2vqj4L3eqh446wHGRmg"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://linkedin.com/in/SpacesBoost?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEe0dxOoNnLljc5TxhSKQLLTPWWjufRfgm8tFdgh6dGq7htfG0c6DRs1XfZYGA_aem_FCVwafPgQ3MnN1xsmcDv2g"><i class="flaticon-linkedin-big-logo"></i></a>
+                            <a href="https://www.instagram.com%2FSpacesBoost%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEelYmkqE4MpFB6xqwF6CTW6G6uf9AuXjETX3GT79kYZAZJPaqKQbj0vAw3FYk_aem_ICgQ_Pr4MIKbAfB2MpGg0Q&h=AT2okG8anavOmfPUWoh7Ss2IpBCZy4Tu7YvcwdO1NZQ7NjYZX1KDCrtt8-kibw2_-l8PHizLCYV1ll__gz2Zpr8PI0Kr6DBOg15MVmAJwlT1gh88DEF6gZe9FQbtFb9ODq2Z"><i class="flaticon-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+
+    <!-- HEADER SECTION  -->
+    <header class="ul-header ul-header-2">
+        <div class="ul-header-bottom to-be-sticky wow animate__slideInDown" >
+            <div class="ul-header-bottom-wrapper ul-header-container">
+                <div class="logo-container">
+                    <a href="index.html" class="d-inline-block"><img src="assets/img/logo_spaceboost.png" alt="logo" class="logo"></a>
+                </div>
+
+                <div class="ul-header-bottom-center">
+                    <!-- header nav -->
+                    <div class="ul-header-nav-wrapper">
+                        <div class="to-go-to-sidebar-in-mobile">
+                            <nav class="ul-header-nav">
+                                <a href="#entreprise" class="active">Entreprise</a>
+                                <a href="#annonceur">Annonceur</a>
+                                <a href="#utilisation">Utilisation</a>
+                                <a href="#faq">faq</a>
+
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ul-header-bottom-right">
+                    <div class="ul-header-2-bottom-btns">
+                        <a href="404.html" class="ul-2-btn d-xxs-none"><span style="background-color: #052859; border-radius: 50%;"><img src="assets/img/download.png"></span> Télécharger l'App</a>
+                        <a href="404.html" class="ul-2-btn d-xxs-none">Connexion</a>
+                    </div>
+                    <button class="ul-header-sidebar-opener d-lg-none d-inline-flex"><i class="flaticon-right-arrow"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION  -->
+
+
+    <main class="main_style">
+      <div class="main-container">
+            <!-- Header -->
+            <div class="header-section">
+                <div class="logo">
+                     <img src="assets/img/spacesboost_icone_sans_fond.png" alt="logo" class="logo">
+                </div>
+                <h2 class="mt-3 mb-0">Demande de suppression de compte</h2>
+                <p class="mb-0 mt-2">Nous sommes désolés de vous voir partir</p>
+            </div>
+            
+            <!-- Content -->
+            <div class="content-section">
+                <!-- Warning -->
+                <div class="warning-box">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-exclamation-triangle warning-icon"></i>
+                        <div>
+                            <h5 class="mb-2 text-warning">⚠️ Attention - Action irréversible</h5>
+                            <p class="mb-0">La suppression de votre compte est définitive. Toutes vos données seront perdues et ne pourront pas être récupérées.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rules Section -->
+                <div class="rules-section">
+                    <h4 class="mb-3" style="color: var(--primary-color);">
+                        <i class="fas fa-info-circle"></i> Règles de suppression
+                    </h4>
+                    
+                    <div class="rule-item">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>Période de grâce de 30 jours</strong><br>
+                            Votre compte sera désactivé immédiatement, mais vous avez 30 jours pour annuler la suppression en vous reconnectant.
+                        </div>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Suppression des données</strong><br>
+                            Après 30 jours, toutes vos données personnelles, publications, messages et fichiers seront définitivement supprimés.
+                        </div>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <div class="step-number">3</div>
+                        <div>
+                            <strong>Contenu partagé</strong><br>
+                            Les messages envoyés à d'autres utilisateurs peuvent rester visibles dans leurs conversations, mais votre nom sera anonymisé.
+                        </div>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <div class="step-number">4</div>
+                        <div>
+                            <strong>Réactivation impossible</strong><br>
+                            Après la suppression définitive, il sera impossible de récupérer votre compte ou vos données. Vous devrez créer un nouveau compte.
+                        </div>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <div class="step-number">5</div>
+                        <div>
+                            <strong>Traitement de la demande</strong><br>
+                            Votre demande sera traitée sous 24-48h. Vous recevrez un email de confirmation avec les instructions finales.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Form Section -->
+                <div class="form-section">
+                    <h4 class="mb-4" style="color: var(--primary-color);">
+                        <i class="fas fa-file-alt"></i> Formulaire de demande
+                    </h4>
+                    
+                    <form id="deletionForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nom" class="form-label">Nom complet *</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Adresse email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="objet" class="form-label">Objet de la demande *</label>
+                            <select class="form-control" id="objet" required>
+                                <option value="">Sélectionnez un motif</option>
+                                <option value="plus-utilise">Je n'utilise plus le service</option>
+                                <option value="probleme-confidentialite">Préoccupations de confidentialité</option>
+                                <option value="trop-notifications">Trop de notifications</option>
+                                <option value="interface-complexe">Interface trop complexe</option>
+                                <option value="autre-plateforme">Je préfère une autre plateforme</option>
+                                <option value="temporaire">Pause temporaire</option>
+                                <option value="autre">Autre raison</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="details" class="form-label">Détails supplémentaires</label>
+                            <textarea class="form-control" id="details" rows="4" placeholder="Expliquez-nous les raisons de votre départ (optionnel). Vos commentaires nous aident à améliorer notre service."></textarea>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="confirmation" required>
+                                <label class="form-check-label" for="confirmation">
+                                    <strong>Je comprends que cette action est irréversible</strong> et que toutes mes données seront définitivement supprimées après 30 jours.
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex gap-3 justify-content-center">
+                            <button type="button" class="btn btn-secondary" onclick="window.history.back()">
+                                <i class="fas fa-arrow-left"></i> Annuler
+                            </button>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-trash-alt"></i> Demander la suppression
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="success-message" id="successMessage">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle me-2"></i>
+                            <div>
+                                <strong>Demande envoyée avec succès !</strong><br>
+                                Vous recevrez un email de confirmation dans les prochaines minutes. Votre compte sera désactivé sous 24-48h.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Alternative Options -->
+                <div class="mt-4 p-3 bg-light rounded">
+                    <h5 style="color: var(--primary-color);">
+                        <i class="fas fa-lightbulb"></i> Alternatives
+                    </h5>
+                    <div class="row mt-3">
+                        <div class="col-md-6 mb-2">
+                            <button class="btn btn-outline-primary w-100">
+                                <i class="fas fa-home"></i> Retour à la page d'accueil
+                            </button>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="https://wa.me/22941555579" class="btn btn-outline-primary w-100">
+                                <i class="fab fa-whatsapp"></i> Contactez service client
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="ul-footer ul-footer-2" style="background-color: #052859; color: white;">
+        <!-- footer top -->
+        <div class="ul-footer-top" style="background-color: white;">
+            <div class="ul-container">
+                <div class="ul-footer-top-contact-infos">
+                    <!-- single info -->
+                    <div class="ul-footer-top-logo">
+                        <a href="index.html"><img src="assets/img/logo_spaceboost.png" alt="logo"></a>
+                        <div class="ul-footer-socials">
+                            <a href="https://www.facebook.com/profile.php?id=61566792945862"><i class="flaticon-facebook-app-symbol"></i></a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2F%40SpacesBoost%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEe0dxOoNnLljc5TxhSKQLLTPWWjufRfgm8tFdgh6dGq7htfG0c6DRs1XfZYGA_aem_FCVwafPgQ3MnN1xsmcDv2g&h=AT0jCmSJZN49jhfpgFoe5lxfWJWPRKMXIdy_ebZp1Yu465_uNEsiJy6twVmrxHIjUvkoQdIbA8H-6CwCXbEJ-QwyOS-4_n-fmaGmsCrPHnMfzvdqxfdtfLWVYx7E3rsQJPj0"><i class="fab fa-youtube"></i></a>
+                            <a href="https://tiktok.com/@spacesboost?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEeu-EbeZtZFWP7SkY8pPz6x-0vaN85B6sPnNEhZyVeHR98joStaJJ2IZqrk-g_aem_ZmZ2vqj4L3eqh446wHGRmg"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://linkedin.com/in/SpacesBoost?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEe0dxOoNnLljc5TxhSKQLLTPWWjufRfgm8tFdgh6dGq7htfG0c6DRs1XfZYGA_aem_FCVwafPgQ3MnN1xsmcDv2g"><i class="flaticon-linkedin-big-logo"></i></a>
+                            <a href="https://www.instagram.com%2FSpacesBoost%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExRElJRGk4Y2JVS0U0QURoTQEelYmkqE4MpFB6xqwF6CTW6G6uf9AuXjETX3GT79kYZAZJPaqKQbj0vAw3FYk_aem_ICgQ_Pr4MIKbAfB2MpGg0Q&h=AT2okG8anavOmfPUWoh7Ss2IpBCZy4Tu7YvcwdO1NZQ7NjYZX1KDCrtt8-kibw2_-l8PHizLCYV1ll__gz2Zpr8PI0Kr6DBOg15MVmAJwlT1gh88DEF6gZe9FQbtFb9ODq2Z"><i class="flaticon-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="ul-footer-top-contact-info">
+                        <!-- icon -->
+                        <div class="ul-footer-top-contact-info-icon"><i class="flaticon-telephone"></i></div>
+                        <!-- txt -->
+                        <div class="ul-footer-top-contact-info-txt">
+                            <span class="ul-footer-top-contact-info-label">Appelez</span>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="tel:+22941555579">41555579</a></h5>
+                        </div>
+                    </div>
+
+                    <!-- single info -->
+                    <div class="ul-footer-top-contact-info">
+                        <!-- icon -->
+                        <div class="ul-footer-top-contact-info-icon"><i class="flaticon-mail"></i></div>
+                        <!-- txt -->
+                        <div class="ul-footer-top-contact-info-txt">
+                            <span class="ul-footer-top-contact-info-label">Email</span>
+                            <h5 class="ul-footer-top-contact-info-address"><a href="mailto:info@exmple.com">spaceboost7@gmail.com</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer middle -->
+        <div class="ul-footer-middle">
+            <div class="ul-container">
+                <div class="ul-footer-middle-wrapper wow animate__fadeInUp">
+                    <div class="ul-footer-about">
+                        <h3 class="ul-footer-widget-title text-light">A Propos</h3>
+                        <p class="ul-footer-about-txt text-light">SpacesBoost est une plateforme panafricaine innovante qui connecte les entreprises avec des influenceurs pour dynamiser leur visibilité et leur croissance en ligne.</p>
+                        <a href="contact.html" class="ul-footer-about-btn text-light">Contactez-nous <i class="flaticon-top-right"></i></a>
+                    </div>
+
+                    <div class="ul-footer-widget">
+                        <h3 class="ul-footer-widget-title text-light">Navigation</h3>
+
+                        <div class="ul-footer-widget-links text-light">
+                            <a href="404.html" class="text-light">Entreprise</a>
+                            <a href="404.html" class="text-light">Annonceur</a>
+                            <a href="404.html" class="text-light">Qui sommes-nous</a>
+                            <a href="404.html" class="text-light">faq</a>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer-widget ul-footer-recent-posts">
+                        <h3 class="ul-footer-widget-title text-light">Légal</h3>
+
+                        <div class="ul-footer-widget-links text-light">
+                            <a href="demande_suppression_compte.html" class="text-light">Demande de Suppression de Compte</a>
+                            <a href="404.html" class="text-light">Conditions Générales d’Utilisation</a>
+                            <a href="404.html" class="text-light">Politique de Confidentialité</a>
+                            <a href="404.html" class="text-light">Mentions légales</a>
+                        </div>
+                    </div>
+
+                    <div class="ul-footer-widget ul-nwsltr-widget">
+                        <h3 class="ul-footer-widget-title text-light">Instalation</h3>
+                        <div class="ul-footer-widget-links text-light">
+                            <span><img src="assets/img/app-store.png"></span>
+                            <span><img src="assets/img/play-store.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div class="ul-container">
+            <div class="ul-footer-bottom">
+                <div class="ul-footer-bottom-wrapper justify-content-center">
+                    <p class="copyright-txt text-light">Copyright &copy;
+                        <script>document.write(new Date().getFullYear())</script> Tous droit réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+    <script src="assets/vendor/scrollspy/simple-scrollspy.min.js"></script>
+
+
+    <!-- custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tab.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper', {
+          autoplay: true,
+          loop: true,
+          autrewind: true,
+          initialSlide: 0, // défini l'index du premier élément
+          autoplayTimeout: 5000,
+          disableOnInteraction: true,
+          speed: 1000,
+          spaceBetween: 30,
+          slidesPerView: 5,
+          centeredSlides: true,
+        });
+      
+        swiper.on('resize', function() {
+          if (swiper.params.breakpoints.landscape) {
+            // ajuster les options pour les écrans grands
+            swiper.params.slidesPerView = 5;
+          } else if (swiper.params.breakpoints.tablet) {
+            // ajuster les options pour les écrans tablettes
+            swiper.params.slidesPerView = 5;
+          } else {
+            // ajuster les options pour les écrans mobiles
+            swiper.params.slidesPerView = 2;
+          }
+        });
+    </script>
+
+    <script>
+        const logos = document.querySelectorAll('.logo_mp');
+        let index = 0;
+    
+        function animateLogos() {
+        logos.forEach((logo_mp, i) => {
+            const img = logo_mp.querySelector('img');
+            img.classList.remove('zooming');
+            img.style.opacity = '0.4';
+        });
+    
+        const current = logos[index].querySelector('img');
+        current.classList.add('zooming');
+        current.style.opacity = '1';
+    
+        index = (index + 1) % logos.length;
+        }
+    
+        setInterval(animateLogos, 1500); // Change toutes les 1.5s
+    </script>
+</body>
+
+</html>
